@@ -1,0 +1,29 @@
+*{
+	padding:0;
+	margin:0;	
+	}
+	
+.wrap{
+	width:800px;
+	height:600px;
+	margin:0 auto;
+	}
+	
+.allCanvas{
+	position:relative;
+	width:800px;
+	height:600px;
+	}
+	
+.canvasTag{
+	position:absolute;
+	left:0;
+	right:0;
+	}
+	
+#canvas1{
+	z-index:0;
+	}
+#canvas2{
+	z-index:1;
+	}

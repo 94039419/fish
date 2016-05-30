@@ -1,0 +1,39 @@
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
+<html xmlns="http://www.w3.org/1999/xhtml">
+<head>
+<meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
+<style>
+	.wrap{
+		width:0;
+		height:30px;
+		background:#00F;
+		position:absolute;
+		border:1px solid red;
+		}
+	
+</style>
+
+<title>大鱼喂小鱼</title>
+</head>
+
+<body>
+	<div class="wrap" id="wrap">
+    
+    </div>
+    <script src=""></script>
+	<script>
+    	window.onload=function(){
+			anim();
+		}
+		
+		var speed=3;
+		function anim(){
+			var wrap= document.getElementById("wrap");	
+			wrap.style.width=wrap.offsetWidth+speed+"px";
+			
+			window.requestAnimFrame(anim);
+			
+		}
+    </script>
+</body>
+</html>
